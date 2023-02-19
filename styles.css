@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: #222;
+    margin: 0;
+    background-color: #efefef;
+
+}
+
+/* HEADER */
+
+.heading {
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    padding-left: 5px; 
+    overflow: hidden;
+    font-family: Lato, sans-serif;
+    border-radius: 35px;
+    margin: 10px 10px 0 10px;
+    background-color: #fff;;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+#header-img {
+    justify-content: center;
+    float: left;
+    width: 130px;
+    margin: -7px 0px 0px 50px;
+    padding-right: 2px;
+    object-fit: contain;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAVIGATION BAR */
+
+#nav-bar {
+    overflow: hidden;
+    float: right;
+}
+
+#nav-list {
+    display: flex;
+    list-style-type: none;
+    margin-right: 55px;
+}
+
+#nav-list li {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav-list a {
+    color: #f35a5a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#nav-list a:hover {
+    color:#666;
+}
+
+/* CONTACT */
+
+.form h2{
+    text-align: center;
+    color:#f35a5a;
+    padding: 0 5px 10px 5px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 0 15px 0;
+    font-weight: 600;
+}
+
+#email {
+    margin-top: 15px;
+    font-family: Lato, sans-serif;
+    border: 2px solid #666;
+    border-radius: 35px;
+    width: 17rem;
+    height: 2rem;
+    text-align: center;
+}
+
+#submit {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    width: 4rem;
+    border: 2px solid #222;
+    border-radius: 35px;
+    background-color: #222;
+    color:#fff;
+}
+
+#submit:hover {
+    color: #222;
+    background-color: #f35a5a;
+    border: 2px solid #f35a5a;
+    cursor: pointer;
+}
+
+/* SECTION WHAT IS WETACA */
+
+#What_is_Wetaca {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.what-is-wetaca1, .what-is-wetaca2, .what-is-wetaca3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 409vw;
+    padding: 30px 15px 0px 15px;
+    text-align: justify;
+    color: #222;
+}
+
+.what-is-wetaca1 h3, .what-is-wetaca2 h3, .what-is-wetaca3 h3 {
+    text-align: center;
+}
+
+.what-is-wetaca1 {
+    margin-left: 20vw;
+}
+
+.what-is-wetaca3 {
+    margin-right: 20vw;
+}
+
+.fa-bowl-food, .fa-seedling, .fa-heart {
+    font-size: 3rem;
+    color: #f35a5a;
+}
+
+/* SECTION HOW IT WORKS */
+
+.grid {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+    width: 15vw;
+    margin-left: 20vw;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-right: 20vw;
+    width: 42vw;
+}
+
+.desc h3 {
+    padding: 0;
+    margin: 15px 0px 0px 0px;
+}
+
+.grid:last-child {
+    margin-bottom: 35px;
+}
+
+.fa-utensils, .fa-kitchen-set, .fa-truck-fast, .fa-calendar-week, .fa-power-off {
+    font-size: 3rem;
+    color: olive;
+}
+
+
+/* VIDEO */
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* PRICING */
+
+.buy-button {
+    border: 2px solid #f35a5a;
+    border-radius: 35px;
+    background-color: #f35a5a;
+    color: #222;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 75px;
+    margin-top: 35px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #222;
+    min-height: 75px;
+}
+
+.text-footer {
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    padding: 35px;
+}
+
+
+/* @MEDIA */
+
+@media only screen and (max-width:950px) {
+    .what-is-wetaca1 {
+        margin-left: 8vw;
+    }
+    .what-is-wetaca3 {
+        margin-right: 8vw;
+    }
+
+    .icon {
+        margin-left: 8vw;
+    }
+
+    .desc {
+        margin-right: 8vw;
+        width: 65vw;
+    }
+}
+
+@media only screen and (max-width:600px) {
+/* NAV BAR */
+
+    #nav-list {
+        align-items: center;
+    }
+
+    #nav-list li {
+        padding: 7px;
+        text-align: center;
+        font-size: small;
+    }
+
+/* FORM TITLE */
+    h2 {
+        font-size: medium;
+    }
+
+    label {
+        font-size: small;
+    }
+
+    #What_is_Wetaca {
+        font-size: small;
+    }
+
+    .fa-solid {
+        font-size: 1rem;
+    }
+
+    .what-is-wetaca1 {
+        margin-left: 1vw;
+    }
+    .what-is-wetaca3 {
+        margin-right: 1vw;
+    }
+
+    .icon {
+        margin-left: 1vw;
+    }
+
+    .desc {
+        margin-right: 2vw;
+        width: 85vw;
+        font-size: small;
+    }
+
+    #video {
+        max-width: 450px;
+        height: auto;
+        min-height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .fa-bowl-food, .fa-seedling, .fa-heart, .fa-utensils, .fa-kitchen-set, .fa-truck-fast, .fa-calendar-week, .fa-power-off {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    /* NAV BAR */
+
+    #nav-bar {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: inline-block;
+        position: relative;
+        width: 250px;
+    }
+
+    .dropdown-button {
+        font-weight: 600;
+        font-size: 1.4rem;
+        overflow: hidden;
+        margin-left: 16px;
+        margin-top: 18px;
+        background-color: #f35a5a;
+        border: 2px solid #222;
+        color:#222;
+        border-radius: 15px;
+        align-items: left;
+    }
+
+    .dropdown-content {
+        display: none;
+        color:#fff;
+        width: 250px;
+        position:fixed;
+    }
+
+    .dropdown-content a {
+        overflow: hidden;
+        display: block;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .mobile-menu:hover .dropdown-content {
+        display: block;
+        font-size: small;
+        background-color: #fff;
+        margin-left: 25px;
+        width: 110px;
+        border-bottom: 2px solid #222;
+        border-left: 2px solid #222;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .mobile-menu:hover .dropdown-content a {
+        color: #f35a5a;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    #header-img {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .what-is-wetaca1 , .what-is-wetaca2, .what-is-wetaca3 {
+        padding: 0px 7px 0px 7px;
+
+    }
+
+    .what-is-wetaca1 h3, .what-is-wetaca2 h3, .what-is-wetaca3 h3 {
+        margin: 0;
+    }
+
+    .what-is-wetaca2 h3, .what-is-wetaca3 h3 {
+        padding-bottom: 17px;
+    }
+}
+
